@@ -365,7 +365,7 @@ console.log( amount );		// "$199.98"
 
 The `amount` variable starts out holding the number `99.99`, and then holds the `number` result of `amount * 2`, which is `199.98`.
 
-The first `console.log(..)` command has to *implicitly* coerce that `number` value to a `string` to print it out.
+The first `console.log(..)` command has to *implicitly* coerce that `number` value to a `string` to print it out as a string. Without that coercion, it would be printed as a number.
 
 Then the statement `amount = "$" + String(amount)` *explicitly* coerces the `199.98` value to a `string` and adds a `"$"` character to the beginning. At this point, `amount` now holds the `string` value `"$199.98"`, so the second `console.log(..)` statement doesn't need to do any coercion to print it out.
 
